@@ -38,6 +38,8 @@ return {
         "c_sharp",
         "cpp",
         "cmake",
+        "json",
+        "yaml",
       },
     },
   },
