@@ -6,6 +6,7 @@ local options = {
     cs = { "csharpier" },
     css = { "prettier" },
     html = { "prettier" },
+    json = { "fixjson" },
   },
 
   format_on_save = {
