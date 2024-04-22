@@ -4,6 +4,7 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 local conform = require "conform"
+local dap = require "dap"
 
 map("i", "jj", "<ESC>", { desc = "Escape insert mode with jj" })
 
@@ -13,6 +14,10 @@ map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>", { desc = "Save with CTRL+S" })
 map("n", "<leader>df", function()
   conform.format()
 end, { desc = "Format Document" })
+
+map("n", "<leader>db", function()
+  dap.toggle_breakpoint()
+end, { desc = "Toggle BreakPoint" })
 
 -- recommended mappings
 -- resizing splits
