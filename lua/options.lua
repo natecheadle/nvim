@@ -1,6 +1,8 @@
 require "nvchad.options"
 
-vim.opt.listchars:append {
+local opt = vim.opt
+
+opt.listchars:append {
   tab = "<->",
   trail = "·",
   lead = "·",
@@ -9,7 +11,10 @@ vim.opt.listchars:append {
   nbsp = "‿",
 }
 
-vim.opt.list = true
+opt.list = true
+
+opt.number = true
+opt.relativenumber = true
 
 -- add yours here!
 
