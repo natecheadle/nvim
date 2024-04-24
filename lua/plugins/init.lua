@@ -92,10 +92,14 @@ return {
   },
   {
     "Civitasv/cmake-tools.nvim",
-    opts = function()
-      return require "configs.cmake-tools"
+    config = function()
+      require "configs.cmake-tools"
     end,
     event = "VeryLazy",
+    dependencies = {
+      "stevearc/overseer.nvim",
+      "akinsho/toggleterm.nvim",
+    },
   },
   { "mrjones2014/smart-splits.nvim" },
   {
