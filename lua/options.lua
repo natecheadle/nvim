@@ -26,6 +26,8 @@ vim.fn.sign_define("DapBreakpointRejected", { text = "⚠", texthl = "DapBreakpo
 vim.fn.sign_define("DapLogPoint", { text = "■", texthl = "DapLogPoint" })
 vim.fn.sign_define("DapStopped", { text = "▶", texthl = "DapStopped", linehl = "DapStopped", numhl = "DapStopped" })
 
+vim.cmd "autocmd BufRead,BufNewFile *.vert,*.frag,*.geom,*.comp set filetype=glsl"
+
 -- add yours here!
 
 -- local o = vim.o

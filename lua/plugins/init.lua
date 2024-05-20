@@ -45,6 +45,7 @@ return {
         "cmake",
         "json",
         "yaml",
+        "glsl",
       },
     },
   },
