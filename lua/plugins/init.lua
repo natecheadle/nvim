@@ -15,6 +15,12 @@ return {
     event = "VeryLazy",
   },
   {
+    "nvim-telescope/telescope.nvim",
+    opts = function()
+      local conf = require "nvchad.configs.telescope"
+    end,
+  },
+  {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
