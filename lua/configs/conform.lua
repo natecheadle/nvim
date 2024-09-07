@@ -7,6 +7,7 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     json = { "fixjson" },
+    python = { "autopep8" },
   },
 
   format_on_save = {
