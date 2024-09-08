@@ -8,6 +8,8 @@ local dap = require "dap"
 
 map("i", "jj", "<ESC>", { desc = "Escape insert mode with jj" })
 
+map("v", "<leader>rf", "y:%s/<c-r>0//g<left><left>", { desc = "Replace selection in file" })
+
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>", { desc = "Save with CTRL+S" })
 
