@@ -56,6 +56,7 @@ return {
         "yaml",
         "glsl",
         "python",
+        "latex",
       },
     },
   },
@@ -116,5 +117,12 @@ return {
   {
     "stevearc/dressing.nvim",
     event = "VeryLazy",
+  },
+  {
+    "lervag/vimtex",
+    lazy = false, -- we don't want to lazy load VimTeX
+    init = function()
+      require "configs.vimtex"
+    end,
   },
 }

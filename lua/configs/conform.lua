@@ -8,6 +8,7 @@ local options = {
     html = { "prettier" },
     json = { "fixjson" },
     python = { "autopep8" },
+    tex = { "latexindent" },
   },
 
   format_on_save = {

@@ -3,8 +3,6 @@ require "nvchad.mappings"
 -- add yours here
 
 local map = vim.keymap.set
-local conform = require "conform"
-local dap = require "dap"
 
 map("i", "jj", "<ESC>", { desc = "Escape insert mode with jj" })
 
@@ -14,11 +12,11 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>", { desc = "Save with CTRL+S" })
 
 map("n", "<leader>df", function()
-  conform.format()
+  require("conform").format()
 end, { desc = "Format Document" })
 
 map("n", "<leader>db", function()
-  dap.toggle_breakpoint()
+  require("dap").toggle_breakpoint()
 end, { desc = "Toggle BreakPoint" })
 
 -- recommended mappings
@@ -46,3 +44,7 @@ map("n", "<leader>cc", "<CMD> CMakeGenerate <CR>", { desc = "CMake Configure" })
 map("n", "<leader>cb", "<CMD> CMakeBuild <CR>", { desc = "CMake Build" })
 map("n", "<leader>cr", "<CMD> CMakeRun <CR>", { desc = "CMake Run" })
 map("n", "<leader>cd", "<CMD> CMakeDebug <CR>", { desc = "CMake Debug" })
+
+--vimtex mappings
+map("n", "<leader>li", "<CMD> VimtexInfo <CR>", { desc = "Vimtex Info" })
+map("n", "<leader>ll", "<CMD> VimtexCompile <CR>", { desc = "Vimtex Compile" })
