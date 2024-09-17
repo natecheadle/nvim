@@ -2,9 +2,7 @@ return {
   {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
-    config = function()
-      require "configs.conform"
-    end,
+    opts = require "configs.conform",
   },
   {
     "neovim/nvim-lspconfig",
@@ -16,30 +14,9 @@ return {
   },
   {
     "nvim-telescope/telescope.nvim",
-    opts = function()
-      local conf = require "nvchad.configs.telescope"
-    end,
   },
   {
     "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "clangd",
-        "clang-format",
-        "codelldb",
-        "stylua",
-        "lua-language-server",
-        "cmake-language-server",
-        "cmakelang",
-        "cmakelint",
-        "netcoredbg",
-        "csharp-language-server",
-        "csharpier",
-        "pyright",
-        "autopep8",
-        "pylint",
-      },
-    },
   },
   {
     "nvim-treesitter/nvim-treesitter",
