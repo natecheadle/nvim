@@ -48,3 +48,6 @@ map("n", "<leader>cd", "<CMD> CMakeDebug <CR>", { desc = "CMake Debug" })
 --vimtex mappings
 map("n", "<leader>li", "<CMD> VimtexInfo <CR>", { desc = "Vimtex Info" })
 map("n", "<leader>ll", "<CMD> VimtexCompile <CR>", { desc = "Vimtex Compile" })
+
+-- LazyGit Options
+map("n", "<leader>lg", "<cmd>LazyGit<cr>", { desc = "LazyGit" })
