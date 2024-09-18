@@ -38,6 +38,13 @@ return {
     },
   },
   {
+    "mfussenegger/nvim-dap-python",
+    config = function()
+      require("dap-python").setup ".venv"
+      require("dap-python").test_runner = "pytest"
+    end,
+  },
+  {
     "mfussenegger/nvim-lint",
     config = function()
       require "configs.nvim-lint"
