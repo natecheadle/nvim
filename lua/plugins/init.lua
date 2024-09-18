@@ -7,16 +7,9 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require("nvchad.configs.lspconfig").defaults()
       require "configs.lspconfig"
     end,
     event = "VeryLazy",
-  },
-  {
-    "nvim-telescope/telescope.nvim",
-  },
-  {
-    "williamboman/mason.nvim",
   },
   {
     "nvim-treesitter/nvim-treesitter",
