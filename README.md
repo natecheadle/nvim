@@ -1,2 +1,2 @@
-# starter
-Starter config for NvChad
+# NVIM Config
+My personal NVIM config
