@@ -31,9 +31,9 @@ return {
 			mode = "n",
 		},
 		{
-			"<leader>cc",
-			"<CMD> CMakeCompile <CR>",
-			desc = "CMake Compile",
+			"<leader>cb",
+			"<CMD> CMakeBuild <CR>",
+			desc = "CMakeBuild",
 			mode = "n",
 		},
 		{

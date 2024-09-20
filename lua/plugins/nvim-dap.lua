@@ -11,7 +11,7 @@ return {
 		local codelldb_path = codelldb:get_install_path() .. "/extension/adapter/codelldb"
 
 		local netcoredbg = mason_registry.get_package("netcoredbg")
-		local netcoredbg_path = netcoredbg:get_install_path() .. "/extension/netcoredbg/ntecoredbg"
+		local netcoredbg_path = netcoredbg:get_install_path() .. "/extension/netcoredbg/netcoredbg"
 
 		dap.adapters.codelldb = {
 			type = "server",

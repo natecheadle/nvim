@@ -27,6 +27,11 @@ return {
 				"pyright",
 				"autopep8",
 				"pylint",
+
+				--json
+				"fixjson",
+				"jsonlint",
+				"json-lsp",
 			},
 		})
 	end,
