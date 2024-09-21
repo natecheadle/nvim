@@ -13,6 +13,22 @@ return {
 			mode = "n",
 		},
 		{
+			"<leader>fa",
+			function()
+				require("telescope.builtin").find_files({ no_ignore = true })
+			end,
+			desc = "Telescope Find All Files",
+			mode = "n",
+		},
+		{
+			"<leader>fr",
+			function()
+				require("telescope.builtin").lsp_references()
+			end,
+			desc = "Telescope Find All References",
+			mode = "n",
+		},
+		{
 			"<leader>fg",
 			function()
 				require("telescope.builtin").live_grep()
@@ -29,11 +45,11 @@ return {
 			mode = "n",
 		},
 		{
-			"<leader>fb",
+			"<leader>fc",
 			function()
-				require("telescope.help_tags").buffers()
+				require("telescope.builtin").current_buffer_fuzzy_find()
 			end,
-			desc = "Telescope Help Tags",
+			desc = "Telescope Find Current Buffer",
 			mode = "n",
 		},
 	},
