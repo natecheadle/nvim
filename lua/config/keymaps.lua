@@ -8,4 +8,6 @@ map("n", "<leader>df", function()
 	require("conform").format()
 end, { desc = "Format Document" })
 
-map("n", "<leader>e", "<cmd>NvimTreeOpen<cr>", { desc = "Open Nvim Tree" })
+map("n", "<leader>bn", ":bnext<cr>", { desc = "Next Buffer" })
+map("n", "<leader>bp", ":bprevious<cr>", { desc = "Previous Buffer" })
+map("n", "<leader>bd", ":bdelete<cr>", { desc = "Delete Buffer" })

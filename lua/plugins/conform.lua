@@ -20,4 +20,14 @@ return {
 			lsp_fallback = true,
 		},
 	},
+	keys = {
+		{
+			"<leader>df",
+			function()
+				require("conform").format()
+			end,
+			desc = "Format Document",
+			mode = "n",
+		},
+	},
 }
