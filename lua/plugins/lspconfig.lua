@@ -27,4 +27,14 @@ return {
 		"hrsh7th/nvim-cmp",
 		"hrsh7th/cmp-nvim-lsp",
 	},
+	keys = {
+		{
+			"<leader>ca",
+			function()
+				vim.lsp.buf.code_action()
+			end,
+			desc = "Show Code Actions",
+			mode = "n",
+		},
+	},
 }
