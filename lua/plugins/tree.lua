@@ -1,5 +1,6 @@
 return {
 	"nvim-tree/nvim-tree.lua",
+	lazy = false, -- can't be lazy or initial state is bad
 	config = function()
 		require("nvim-tree").setup()
 	end,
