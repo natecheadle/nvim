@@ -36,5 +36,13 @@ return {
 			desc = "Show Code Actions",
 			mode = "n",
 		},
+		{
+			"<leader>ra",
+			function()
+				vim.lsp.buf.rename()
+			end,
+			desc = "Rename Using LSP",
+			mode = "n",
+		},
 	},
 }
