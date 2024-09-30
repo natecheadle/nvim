@@ -37,6 +37,12 @@ return {
 			mode = "n",
 		},
 		{
+			"<leader>fg",
+			"y<ESC>:Telescope live_grep default_text=<c-r>0<CR>",
+			desc = "Telescope Live Grep Selection",
+			mode = "v",
+		},
+		{
 			"<leader>fb",
 			function()
 				require("telescope.builtin").buffers()
