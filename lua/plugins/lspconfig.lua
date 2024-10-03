@@ -37,6 +37,22 @@ return {
 			mode = "n",
 		},
 		{
+			"<leader>gd",
+			function()
+				vim.lsp.buf.definition()
+			end,
+			desc = "Go To Symbol Definition",
+			mode = "n",
+		},
+		{
+			"<leader>ge",
+			function()
+				vim.lsp.buf.declaration()
+			end,
+			desc = "Go To Symbol Declaration",
+			mode = "n",
+		},
+		{
 			"<leader>ra",
 			function()
 				vim.lsp.buf.rename()
