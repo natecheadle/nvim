@@ -17,6 +17,19 @@ opt.tabstop = 2
 opt.shiftwidth = 2
 opt.termguicolors = true
 
+if vim.g.neovide then
+	vim.g.neovide_scale_factor = 0.75
+	local change_scale_factor = function(delta)
+		vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + delta
+	end
+	vim.keymap.set("n", "<C-=>", function()
+		change_scale_factor(0.05)
+	end)
+	vim.keymap.set("n", "<C-->", function()
+		change_scale_factor(-0.05)
+	end)
+end
+
 vim.api.nvim_set_hl(0, "DapBreakpoint", { ctermbg = 0, fg = "#993939" })
 vim.api.nvim_set_hl(0, "DapLogPoint", { ctermbg = 0, fg = "#61afef" })
 vim.api.nvim_set_hl(0, "DapStopped", { ctermbg = 0, fg = "#98c379", bg = "#31353f" })
