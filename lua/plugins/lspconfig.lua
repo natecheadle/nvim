@@ -4,7 +4,7 @@ return {
 		local lsp = require("lspconfig")
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-		local lsp_servers = { "cmake", "clangd", "pyright", "jsonls" }
+		local lsp_servers = { "cmake", "clangd", "pyright", "jsonls", "csharp_ls" }
 		for _, server in ipairs(lsp_servers) do
 			lsp[server].setup({
 				capabilities = capabilities,
