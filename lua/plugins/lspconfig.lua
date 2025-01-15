@@ -1,5 +1,6 @@
 return {
 	"neovim/nvim-lspconfig",
+
 	config = function()
 		local lsp = require("lspconfig")
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
@@ -22,6 +23,7 @@ return {
 			capabilites = capabilities,
 		})
 	end,
+
 	dependencies = {
 		"williamboman/mason-lspconfig.nvim",
 		"hrsh7th/nvim-cmp",
