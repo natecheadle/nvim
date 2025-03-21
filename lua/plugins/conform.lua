@@ -12,12 +12,19 @@ return {
 			json = { "fixjson" },
 			python = { "autopep8" },
 			tex = { "latexindent" },
+			markdown = { "mdformat" },
 		},
 
 		format_on_save = {
 			-- These options will be passed to conform.format()
 			timeout_ms = 1000,
 			lsp_fallback = true,
+		},
+
+		formatters = {
+			mdformat = {
+				prepend_args = { "--end-of-line", "lf", "--number", "--wrap", "100" },
+			},
 		},
 	},
 	keys = {

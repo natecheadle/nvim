@@ -32,6 +32,13 @@ return {
 				"fixjson",
 				"jsonlint",
 				"json-lsp",
+
+				--markdown
+				"marksman",
+				"mdformat",
+
+				--other
+				"prettier",
 			},
 		})
 	end,
