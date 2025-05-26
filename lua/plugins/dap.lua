@@ -5,13 +5,6 @@ return {
 	},
 	config = function()
 		local dap = require("dap")
-		local mason_registry = require("mason-registry")
-
-		local codelldb = mason_registry.get_package("codelldb")
-		local codelldb_path = codelldb:get_install_path() .. "/extension/adapter/codelldb"
-
-		local netcoredbg = mason_registry.get_package("netcoredbg")
-		local netcoredbg_path = netcoredbg:get_install_path() .. "/extension/netcoredbg/netcoredbg"
 
 		dap.adapters.codelldb = {
 			type = "server",
@@ -24,7 +17,7 @@ return {
 			port = "${port}",
 			executable = {
 				-- CHANGE THIS to your path!
-				command = codelldb_path,
+				command = "codelldb",
 				args = { "--port", "${port}" },
 
 				-- On windows you may have to uncomment this:
@@ -34,13 +27,13 @@ return {
 
 		dap.adapters.coreclr = {
 			type = "executable",
-			command = netcoredbg_path,
+			command = "netcoredbg",
 			args = { "--interpreter=vscode" },
 		}
 
 		dap.adapters.netcoredbg = {
 			type = "executable",
-			command = netcoredbg_path,
+			command = "netcoredbg",
 			args = { "--interpreter=vscode" },
 		}
 
