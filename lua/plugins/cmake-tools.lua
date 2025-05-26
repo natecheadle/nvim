@@ -1,5 +1,6 @@
 return {
 	"Civitasv/cmake-tools.nvim",
+	commit = "72abb00",
 	config = function()
 		require("cmake-tools").setup({
 			cmake_executor = {
