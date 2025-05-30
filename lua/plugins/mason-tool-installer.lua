@@ -20,7 +20,7 @@ return {
 
 				--C#
 				"netcoredbg",
-				"csharp-language-server",
+				-- Has Issues "csharp-language-server",
 				"csharpier",
 
 				--python
